@@ -31,6 +31,7 @@
                    value="{{ request.GET.q }}">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+
     </div>
 </nav>
 <h1>Computer Details</h1>
@@ -44,7 +45,9 @@
         <img src="{{ computer.computer_picture.url }}" alt="{{ computer.company_name }} - {{ computer.model }}">
         {% endif %}
     </div>
+
 </div>
+<a style="color:white" href="{% url 'computer:list' %}"><button type="button" class="btn btn-secondary btn-lg btn-block">Back</button></a>
 <div class="comments">
     <h2>Comments</h2>
     <form id="comment-form" method="post">
