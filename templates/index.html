@@ -53,8 +53,8 @@
                 </a>
                 <p class="card-text"><small class="text-muted">{{computer.year_of_creation}}</small></p>
                 <div class="download-btn">
-                    <button type="button" class="btn btn-primary"><a style="color: white;"
-                            href="{% url 'computer:download' pk=computer.id %}"> Download</a></button>
+                    <a style="color: white;"
+                            href="{% url 'computer:download' pk=computer.id %}"><button type="button" class="btn btn-primary"> Download</button></a>
                 </div>
             </div>
         </div>
