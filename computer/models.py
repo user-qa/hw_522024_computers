@@ -15,6 +15,11 @@ class ComputerModel(models.Model):
 
     year_of_creation = models.IntegerField()
     price = models.IntegerField()
+    computer_picture = models.ImageField(upload_to='media/computer-pics', null=True)
 
     def __str__(self):
         return f"{self.company_name} ---> {self.model}"
+
+    class Meta:
+        verbose_name = 'computer'
+        verbose_name_plural = 'computers'

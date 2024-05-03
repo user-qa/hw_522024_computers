@@ -1,0 +1,56 @@
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Adjust the maximum width as needed */
+    max-height: 200px; /* Adjust the maximum height as needed */
+    object-fit: contain;
+}
+.card {
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Add padding to the card content */
+}
+
+.card-title {
+    font-size: 18px; /* Adjust the font size of the title */
+    font-weight: bold; /* Make the title bold */
+    margin-bottom: 10px; /* Add some space below the title */
+}
+
+.card-text {
+    font-size: 14px; /* Adjust the font size of the text */
+    color: #666; /* Change the color of the text */
+    margin-bottom: 10px; /* Add some space below the text */
+}
+
+.text-muted {
+    font-size: 12px; /* Adjust the font size of the muted text */
+    color: #999; /* Change the color of the muted text */
+}
+
+
+.card-container {
+    width: 20%; /* Set the width of each card container */
+    display: inline-block;
+    margin-right: 0px; /* Add some space between card containers */
+    vertical-align: top;
+    box-sizing: border-box; /* Ensure the width includes padding and border */
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: 100%; /* On smaller screens, display one card per line */
+        margin-right: 0; /* Reset margin to ensure one card per line */
+    }
+}
+
+
+
+.download-btn {
+    margin-top: 10px; /* Add some space between the card body and the download button */
+}
